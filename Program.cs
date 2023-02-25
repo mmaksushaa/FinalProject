@@ -1,4 +1,9 @@
-﻿int GetNumberFromUser(string message, string errorMessage)
+﻿int n = GetNumberFromUser($"Введите количество элементов в массиве", "Ошибка ввода");
+
+
+
+
+int GetNumberFromUser(string message, string errorMessage)
 {
     while(true)
     {
