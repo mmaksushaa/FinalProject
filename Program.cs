@@ -21,3 +21,21 @@ string[] GetArray(int size)
     }
     return res;
 }
+
+string[] ChangeArray(string[] inArray)
+{
+    string[] T = new string[inArray.Length];
+    int j = 0;
+    for(int i = 0; i < inArray.Length; i++)
+    {
+        if(inArray[i].Length <= 3)
+        {
+            T[j] = inArray[i];
+            j++;
+        }
+    }
+
+    Array.Resize(ref T, j);
+    return T;
+}
+
