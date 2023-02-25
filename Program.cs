@@ -9,3 +9,15 @@
         Console.WriteLine(errorMessage);
     }
 }
+
+
+string[] GetArray(int size)
+{
+    string[] res = new string[size];
+    for (int i = 0; i < size; i++)
+    {
+        Console.WriteLine($"Введите элемент {i+1}:");
+        res[i] = Console.ReadLine() ?? "";
+    }
+    return res;
+}
