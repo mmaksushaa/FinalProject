@@ -3,6 +3,8 @@ string[] res1 = GetArray(n);
 Console.Write($"[{String.Join(", ", res1)}]");
 Console.Write(" -> ");
 string[] res2 = ChangeArray(res1);
+Console.Write($"[{String.Join(", ", res2)}]");
+
 
 int GetNumberFromUser(string message, string errorMessage)
 {
