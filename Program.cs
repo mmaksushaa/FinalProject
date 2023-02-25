@@ -1,5 +1,6 @@
 ﻿int n = GetNumberFromUser($"Введите количество элементов в массиве", "Ошибка ввода");
-
+string[] res1 = GetArray(n);
+Console.Write($"[{String.Join(", ", res1)}]");
 
 
 
